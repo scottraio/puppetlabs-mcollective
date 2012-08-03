@@ -12,7 +12,7 @@ module MCollective
             # Basic system inventory, same as the basic discovery agent
             action "inventory" do
                 reply[:agents] = Agents.agentlist
-                reply[:facts] = PluginManager["facts_plugin"].get_facts
+                reply[:facts] = PluginManager["yaml_facts"].get_facts
                 reply[:version] = MCollective.version
                 reply[:classes] = []
                 reply[:main_collective] = config.main_collective

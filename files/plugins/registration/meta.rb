@@ -26,7 +26,7 @@ module MCollective
                 end
                 
                 result[:agentlist] = Agents.agentlist
-                result[:facts] = PluginManager["facts_plugin"].get_facts
+                result[:facts] = PluginManager["yaml_facts"].get_facts
 
                 result
             end

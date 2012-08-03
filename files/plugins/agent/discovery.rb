@@ -66,7 +66,7 @@ module MCollective
                          :classes => [],
                          :times => ::Process.times}
 
-                reply[:facts] = PluginManager["facts_plugin"].get_facts
+                reply[:facts] = PluginManager["yaml_facts"].get_facts
 
                 cfile = Config.instance.classesfile
                 if File.exist?(cfile)

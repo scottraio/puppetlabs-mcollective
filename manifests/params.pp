@@ -20,7 +20,7 @@ class mcollective::params {
   $mc_loglevel          = 'log'
   $mc_daemonize         = '1'
   $mc_security_provider = 'psk'
-  $mc_security_psk      = 'changemeplease'
+  $mc_security_psk      = 'asdf723n2378naw3'
 
   $nrpe_dir_real = $operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|oel)/ => '/etc/nrpe.d',
@@ -65,9 +65,9 @@ class mcollective::params {
   $server_config_group  = '0'
 
   $stomp_user    = 'mcollective'
-  $stomp_passwd  = 'marionette'
-  $stomp_server  = 'stomp'
-  $stomp_port    = '6163'
+  $stomp_passwd  = 'w0rk0ry.777'
+  $stomp_server  = 'saturn01.verascale.com'
+  $stomp_port    = '61613'
 
   $pkg_state = 'present'
 

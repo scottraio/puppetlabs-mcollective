@@ -34,8 +34,8 @@
 # The module works with sensible defaults:
 #
 # node default {
-#   include mcollective
 # }
+#   include mcollective
 #
 # These defaults are:
 #
@@ -56,7 +56,7 @@ class mcollective(
   $version              = 'UNSET',
   $enterprise           = false,
   $manage_packages      = true,
-  $manage_plugins       = false,
+  $manage_plugins       = true,
   $server               = true,
   $server_config        = 'UNSET',
   $server_config_file   = '/etc/mcollective/server.cfg',
@@ -67,7 +67,7 @@ class mcollective(
   $stomp_port           = '61613',
   $mc_security_provider = $mcollective::params::mc_security_provider,
   $mc_security_psk      = $mcollective::params::mc_security_psk,
-  $fact_source          = 'facter',
+  $fact_source          = 'yaml',
   $yaml_facter_source   = '/etc/mcollective/facts.yaml'
 ) inherits mcollective::params {
 
